@@ -84,5 +84,5 @@ stages:
             inputs:
               azureSubscription: 'Azure subscription 1 (b0f53ad6-7dd8-4b1d-ba55-234f90a2a54c)'
               appType: 'webAppLinux'
-              appName: '$(webAppName)'
+              appName: 'urpythonwebapp'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'

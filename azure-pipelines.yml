@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '5ac39bf5-1207-4fc8-931c-ddcfb17b0721'
 
   # Web app name
-  webAppName: 'urpythonwebapp'
+  webAppName: 'ur-python-webapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -83,7 +83,7 @@ stages:
           #   displayName: 'Deploy Azure Web App : '
           #   inputs:
           #     azureSubscription: 'Azure subscription 1 (b0f53ad6-7dd8-4b1d-ba55-234f90a2a54c)'
-          #     appType: 'webAppLinux'
+          #     appType: 'ur-python-webapp'
           #     appName: 'urpythonwebapp'
           #     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
           #     runtimeStack: 'PYTHON|3.7'
@@ -93,6 +93,6 @@ stages:
               ConnectionType: 'AzureRM'
               azureSubscription: 'Azure subscription 1 (b0f53ad6-7dd8-4b1d-ba55-234f90a2a54c)'
               appType: 'webAppLinux'
-              WebAppName: 'urpythonwebapp'
+              WebAppName: 'ur-python-webapp'
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               RuntimeStack: 'PYTHON|3.7'
